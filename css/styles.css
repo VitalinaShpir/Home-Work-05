@@ -80,6 +80,20 @@ body {
 .navigation-list .links:active {
   color: var(--pressed-state-color);
 }
+.current{
+  position: relative;
+}
+.current::after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--pressed-state-color);
+  border-radius: 2px;
+  position: absolute;
+  bottom: -26px;
+}
+
 
 .contacts {
   line-height: 1.3;
