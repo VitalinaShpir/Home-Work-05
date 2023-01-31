@@ -103,11 +103,13 @@ body {
   color: var(--main-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-link:hover, .contacts-link:focus {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--pressed-state-color);
 }
 
-.contacts:hover, .contacts:focus {
+.contacts:hover,
+.contacts:focus {
   color: var(--pressed-state-color);
 }
 
@@ -154,11 +156,13 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.second-btn {
-  background: var(--light-bg-color);
-  border: 1px solid var(--accent-color);
-  color: var(--pressed-state-color);
+.main-btn:hover,
+.main-btn:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--white-color);
 }
 
 .btn {
@@ -171,29 +175,37 @@ body {
   letter-spacing: 0.04em;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn:hover, .btn:focus {
-  background-color: var(--pressed-state-color);
-  color: var(--white-color);
-}
-.btn-list {
-  margin-bottom: 72px;
-}
-.portf-btn {
+.main-filter-btn {
   color: var(--white-color);
   background-color: var(--primary-brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
-}
-.portf-btn,
-.second-btn {
   padding: 12px 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portf-btn:hover,
-.portf-btn:focus,
-.second-btn:hover,
-.second-btn:focus {
+.filter-btn {
+  background: var(--light-bg-color);
+  border: 1px solid var(--accent-color);
+  color: var(--pressed-state-color);
+  padding: 12px 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-list {
+  margin-bottom: 72px;
+}
+
+.main-filter-btn:hover,
+.main-filter-btn:focus,
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--white-color);
   border: 0.5px solid var(--light-bg-color);
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -337,7 +349,6 @@ body {
   width: calc((100% - 2 * 24px) / 3);
   margin-right: 24px;
   margin-bottom: 48px;
-
 }
 .projects-item:nth-child(3n) {
   margin-right: 0px;
@@ -345,7 +356,7 @@ body {
 .projects-item:nth-child(n + 7) {
   margin-bottom: 0px;
 }
-.overlay-container{
+.overlay-container {
   position: relative;
   display: block;
   overflow: hidden;
