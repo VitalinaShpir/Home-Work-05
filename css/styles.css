@@ -101,17 +101,13 @@ body {
 }
 .contacts-link {
   color: var(--main-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-link:hover {
+.contacts-link:hover, .contacts-link:focus {
   color: var(--pressed-state-color);
 }
-.contacts-link:focus {
-  color: var(--pressed-state-color);
-}
-.contacts:hover {
-  color: var(--pressed-state-color);
-}
-.contacts:focus {
+
+.contacts:hover, .contacts:focus {
   color: var(--pressed-state-color);
 }
 
@@ -164,14 +160,7 @@ body {
   border: 1px solid var(--accent-color);
   color: var(--pressed-state-color);
 }
-.btn:hover {
-  background-color: var(--pressed-state-color);
-  color: var(--white-color);
-}
-.btn:focus {
-  background-color: var(--pressed-state-color);
-  color: var(--white-color);
-}
+
 .btn {
   font-family: inherit;
   font-size: 16px;
@@ -182,6 +171,11 @@ body {
   letter-spacing: 0.04em;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover, .btn:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--white-color);
 }
 .btn-list {
   margin-bottom: 72px;
@@ -389,6 +383,7 @@ body {
 .project-link {
   display: block;
   text-decoration: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-link:hover,
 .project-link:focus {
@@ -421,6 +416,7 @@ body {
   height: 40px;
   background-color: var(--primary-brand-color);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-link:hover,
 .social-list-link:focus {
@@ -446,6 +442,7 @@ body {
   height: 88px;
   border: 1px solid var(--subtle-text-color);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list {
   display: flex;
@@ -454,6 +451,7 @@ body {
 }
 .customers-list-icon {
   fill: var(--subtle-text-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-list-icon:hover,
 .customers-list-icon:focus {
@@ -496,6 +494,7 @@ body {
   height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-list-link:hover,
