@@ -29,7 +29,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 28px;
   border-bottom: 1px solid var(--accent-color);
 }
 .head-container {
@@ -79,10 +79,8 @@ body {
 .navigation-list .links:active {
   color: var(--pressed-state-color);
 }
-.current {
-  position: relative;
-}
-.current::after {
+
+.links.current::after {
   content: '';
   display: block;
   width: 100%;
@@ -90,7 +88,14 @@ body {
   background-color: var(--pressed-state-color);
   border-radius: 2px;
   position: absolute;
-  bottom: -26px;
+  bottom: -28px;
+}
+.links {
+  text-decoration: none;
+  color: var(--dark-bg-color);
+  position: relative;
+  display: block;
+  height: auto;
 }
 
 .contacts {
@@ -110,11 +115,6 @@ body {
 .contacts:hover,
 .contacts:focus {
   color: var(--pressed-state-color);
-}
-
-.links {
-  text-decoration: none;
-  color: var(--dark-bg-color);
 }
 
 .list {
