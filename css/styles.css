@@ -29,7 +29,7 @@ body {
   font-family: Roboto, sans-serif;
   font-style: normal;
   padding-top: 24px;
-  padding-bottom: 28px;
+  padding-bottom: 27px;
   border-bottom: 1px solid var(--accent-color);
 }
 .head-container {
@@ -95,7 +95,6 @@ body {
   color: var(--dark-bg-color);
   position: relative;
   display: block;
-  height: auto;
 }
 
 .contacts {
